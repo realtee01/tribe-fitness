@@ -40,7 +40,7 @@ export function Programs() {
   ];
 
   return (
-    <section className="py-24 px-4 sm:px-6 relative bg-[#0B0B0D] overflow-hidden">
+    <section id="programs" className="py-24 px-4 sm:px-6 relative bg-[#0B0B0D] overflow-hidden">
       
       {/* Decorative text behind */}
       <h2 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-anton text-[15vw] leading-none whitespace-nowrap text-white/[0.02] pointer-events-none z-0">

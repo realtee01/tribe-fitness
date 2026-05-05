@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Github, Instagram, Twitter, MapPin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export function Footer() {
   return (
@@ -29,10 +30,10 @@ export function Footer() {
           <div>
             <h4 className="font-oswald text-xl uppercase tracking-wider mb-6 text-brand-light">Quick Links</h4>
             <ul className="space-y-4 font-inter text-brand-light/60 font-medium">
-              <li><a href="#" className="inline-block hover:text-brand-lime hover:scale-105 transition-all">About The Tribe</a></li>
-              <li><a href="#" className="inline-block hover:text-brand-lime hover:scale-105 transition-all">Programs & Classes</a></li>
-              <li><a href="#" className="inline-block hover:text-brand-lime hover:scale-105 transition-all">Pricing & Plans</a></li>
-              <li><a href="#" className="inline-block hover:text-brand-lime hover:scale-105 transition-all">Trainer Roster</a></li>
+              <li><Link to="/#about" className="inline-block hover:text-brand-lime hover:scale-105 transition-all">About The Tribe</Link></li>
+              <li><Link to="/#programs" className="inline-block hover:text-brand-lime hover:scale-105 transition-all">Programs & Classes</Link></li>
+              <li><Link to="/membership#pricing" className="inline-block hover:text-brand-lime hover:scale-105 transition-all">Pricing & Plans</Link></li>
+              <li><Link to="/#trainers" className="inline-block hover:text-brand-lime hover:scale-105 transition-all">Trainer Roster</Link></li>
             </ul>
           </div>
 
