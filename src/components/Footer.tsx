@@ -44,7 +44,7 @@ export function Footer() {
                 <span>124 Iron Street,<br />Warehouse District,<br />NY 10001</span>
               </li>
               <li>info@fitnesstribe.com</li>
-              <li>+1 (555) 019-IRON</li>
+              <li>+1 237 163 3736</li>
             </ul>
           </div>
 
