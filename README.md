@@ -1,20 +1,30 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
-
-# Run and deploy your AI Studio app
-
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/ef326c5a-fc17-4acf-93f9-937d2df55200
-
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+# The Fitness Tribe
+A high-energy landing page for a fitness community, built to inspire action and
+highlight training programs.
+## 🚀 Live Demo
+six.vercel.app)
+Check out the live site: [https://tribe-fitness-six.vercel.app](https://tribe-fitness-
+## 🛠 Tech Stack
+- **Frontend Framework:** React.js
+- **Styling:** Tailwind CSS
+- **Build Tool:** Vite
+## ✨ Key Features
+- Bold, High-impact Typography
+- Membership Program Sections
+- Motivational Visual Content
+- Responsive CTA Buttons
+## 📦 Installation & Setup
+1. **Clone the repository:**
+```bash
+git clone https://github.com/realtee01/project-repo-name.git
+```
+2. **Install dependencies:**
+```bash
+npm install
+```
+3. **Run the development server:**
+```bash
+npm run dev
+```
+## 📄 License
+This project is open-source and available under the [MIT License](LICENSE)
