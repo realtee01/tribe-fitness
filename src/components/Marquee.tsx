@@ -24,13 +24,13 @@ export function Marquee({ text, className = '', outline = false, direction = 1 }
         }}
       >
         <span 
-          className={`font-anton text-5xl md:text-7xl uppercase pr-8 ${outline ? 'text-brand-light/50' : 'text-brand-purple'}`}
+          className={`font-anton text-5xl md:text-7xl uppercase pr-8 ${outline ? 'text-black' : 'text-brand-purple'}`}
           style={outline ? { WebkitTextStroke: '1px rgba(241, 241, 241, 0.8)' } : {}}
         >
           {repeatedText}
         </span>
         <span 
-          className={`font-anton text-5xl md:text-7xl uppercase pr-8 ${outline ? 'text-brand-light/50' : 'text-brand-purple'}`}
+          className={`font-anton text-5xl md:text-7xl uppercase pr-8 ${outline ? 'text-black' : 'text-brand-purple'}`}
           style={outline ? { WebkitTextStroke: '1px rgba(241, 241, 241, 0.8)' } : {}}
         >
           {repeatedText}
