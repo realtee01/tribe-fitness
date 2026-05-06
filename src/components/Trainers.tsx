@@ -1,34 +1,12 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
+import { Link } from 'react-router-dom';
 import { GsapText } from './GsapText';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { trainers } from '../data/trainers';
 
 export function Trainers() {
   const [currentIndex, setCurrentIndex] = useState(0);
-
-  const trainers = [
-    {
-      name: "Jax 'The Hammer' Stone",
-      role: "Head of Strength",
-      bio: "Former elite powerlifting champion. Jax specializes in maximal strength development and biomechanics. He treats every lift as a matter of life and death.",
-      certs: "CSCS, USAW L2",
-      image: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=800&auto=format&fit=crop"
-    },
-    {
-      name: "Elena Cruz",
-      role: "MetCon Specialist",
-      bio: "Ex-military endurance athlete. Elena will push your lungs, heart rate, and mental grit well past their breaking points. Quitting is not in her vocabulary.",
-      certs: "CrossFit L3, NASM-CPT",
-      image: "https://images.unsplash.com/photo-1548690312-e3b507d8c110?q=80&w=800&auto=format&fit=crop"
-    },
-    {
-      name: "Marcus Thorne",
-      role: "Mobility & Recovery",
-      bio: "Focuses on bulletproofing joints and unlocking kinetic chains. Marcus ensures that resting hard and repairing tissue is treated with the same intensity as lifting.",
-      certs: "FRCms, DPT",
-      image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=800&auto=format&fit=crop"
-    }
-  ];
 
   const nextTrainer = () => {
     setCurrentIndex((prev) => (prev === trainers.length - 1 ? 0 : prev + 1));
@@ -85,7 +63,7 @@ export function Trainers() {
                 className="group w-full absolute inset-0 flex flex-col md:flex-row gap-8 lg:gap-16 items-center"
               >
                 {/* Image Container */}
-                <div className="relative w-full md:w-1/2 h-[300px] md:h-[450px] overflow-hidden border-2 border-brand-dark group-hover:border-brand-purple transition-colors duration-300 shrink-0">
+                <Link to={`/trainers/${trainers[currentIndex].id}`} className="relative w-full md:w-1/2 h-[300px] md:h-[450px] overflow-hidden border-2 border-brand-dark group-hover:border-brand-purple transition-colors duration-300 shrink-0 block">
                   <div className="absolute inset-0 bg-brand-purple/20 opacity-0 group-hover:opacity-100 mix-blend-multiply transition-opacity duration-300 z-10" />
                   <img 
                     src={trainers[currentIndex].image} 
@@ -97,13 +75,15 @@ export function Trainers() {
                   <div className="absolute bottom-0 left-0 bg-brand-lime text-brand-dark font-oswald text-sm font-bold uppercase px-4 py-2 z-20 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                     {trainers[currentIndex].certs}
                   </div>
-                </div>
+                </Link>
 
                 {/* Text Content */}
                 <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left px-4 md:px-0">
-                  <h3 className="font-anton text-4xl lg:text-6xl uppercase tracking-wide mb-2 text-brand-light group-hover:text-brand-purple transition-colors">
-                    {trainers[currentIndex].name}
-                  </h3>
+                  <Link to={`/trainers/${trainers[currentIndex].id}`}>
+                    <h3 className="font-anton text-4xl lg:text-6xl uppercase tracking-wide mb-2 text-brand-light group-hover:text-brand-purple transition-colors">
+                      {trainers[currentIndex].name}
+                    </h3>
+                  </Link>
                   <h4 className="font-oswald text-brand-lime uppercase tracking-widest text-lg mb-6">
                     {trainers[currentIndex].role}
                   </h4>

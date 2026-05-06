@@ -5,6 +5,7 @@
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { Membership } from './pages/Membership';
+import { TrainerProfile } from './pages/TrainerProfile';
 import { Sidebar } from './components/Sidebar';
 import { useEffect } from 'react';
 
@@ -37,6 +38,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/membership" element={<Membership />} />
+        <Route path="/trainers/:id" element={<TrainerProfile />} />
       </Routes>
     </BrowserRouter>
   );
