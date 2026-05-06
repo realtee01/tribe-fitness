@@ -56,7 +56,7 @@ export function Footer() {
             &copy; {new Date().getFullYear()} The Fitness Tribe. All Rights Reserved.
           </p>
           <div className="font-hand text-brand-purple text-xl">
-            No excuses allowed.
+            No excuses allowed. Start now.
           </div>
         </div>
       </div>
