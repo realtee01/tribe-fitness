@@ -32,13 +32,8 @@ export function Hero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="relative inline-block mb-2"
         >
-          <GsapText 
-            as="span" 
-            text="No fear." 
-            className="font-hand text-brand-lime text-2xl sm:text-3xl md:text-4xl absolute -top-8 -left-12 sm:-top-10 sm:-left-20 transform -rotate-12 z-30" 
-          />
           <h2 className="font-oswald text-brand-purple tracking-[0.2em] uppercase font-bold text-sm sm:text-base md:text-xl relative z-10 bg-brand-dark px-4 py-1 border border-brand-purple/50 rounded-full">
-            Welcome to the revolution
+            NO FEAR.
           </h2>
         </motion.div>
 

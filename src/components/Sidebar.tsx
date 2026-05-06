@@ -36,6 +36,25 @@ export function Sidebar() {
 
   return (
     <>
+      <div className="absolute top-6 left-6 md:top-10 md:left-10 z-50 flex items-center justify-center pointer-events-auto">
+        <Link to="/" className="group flex items-center gap-3">
+          <div className="relative w-10 h-10 md:w-12 md:h-12 flex items-center justify-center transition-all duration-300">
+            {/* Outer Static Ring */}
+            <div className="absolute inset-0 rounded-full border-2 border-brand-lime opacity-50"></div>
+            <div className="absolute inset-0 rounded-full border border-brand-lime shadow-sm"></div>
+            
+            {/* Inner Solid Circle */}
+            <div className="absolute inset-1 rounded-full bg-brand-dark border border-brand-purple flex items-center justify-center z-10 overflow-hidden group-hover:border-brand-lime transition-colors duration-300">
+              <span className="font-anton text-lg md:text-xl text-brand-light group-hover:text-brand-lime transition-colors font-bold tracking-tighter z-20">TFT</span>
+            </div>
+          </div>
+          <div className="flex flex-col hidden md:flex opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-[-10px] group-hover:translate-x-0">
+            <span className="font-anton text-base md:text-lg leading-none text-brand-light uppercase tracking-wide">The Fitness</span>
+            <span className="font-oswald text-[10px] leading-none text-brand-lime uppercase tracking-[0.2em] mt-0.5">Tribe</span>
+          </div>
+        </Link>
+      </div>
+
       {/* Floating Toggle Button */}
       <button 
         onClick={toggleSidebar}

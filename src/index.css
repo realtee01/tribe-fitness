@@ -48,7 +48,17 @@ body {
   color: transparent;
 }
 
-/* Float Animations */
+@keyframes pulse-slow {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: .7; transform: scale(1.05); }
+}
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-pulse-slow { animation: pulse-slow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+.animate-spin-slow { animation: spin-slow 8s linear infinite; }
 @keyframes float-1 {
   0%, 100% { transform: translateY(0px) rotate(6deg); }
   50% { transform: translateY(-20px) rotate(8deg); }
