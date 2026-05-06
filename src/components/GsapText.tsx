@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 interface GsapTextProps {
   text: string;
   className?: string;
-  as?: keyof JSX.IntrinsicElements;
+  as?: keyof React.JSX.IntrinsicElements;
   delay?: number;
 }
 

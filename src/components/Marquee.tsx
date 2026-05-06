@@ -15,7 +15,7 @@ export function Marquee({ text, className = '', outline = false, direction = 1 }
   return (
     <div className={`relative flex overflow-hidden w-full whitespace-nowrap bg-brand-dark py-4 border-y border-brand-purple/30 ${className}`}>
       <motion.div
-        className="flex shrink-0 items-center w-max"
+        className="flex shrink-0 items-center w-max will-change-transform"
         animate={{ x: direction === 1 ? ["0%", "-50%"] : ["-50%", "0%"] }}
         transition={{
           repeat: Infinity,
